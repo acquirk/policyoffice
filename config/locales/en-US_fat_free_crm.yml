@@ -329,7 +329,7 @@ en-US:
   #----------------------------------------------------------------------------
   alt_email_small: Other
   blog: Website/Blog
-  contact: Contact
+  contact: Client
   contact_small: client
   contacts: Clients
   contacts_options: Clients Options
@@ -339,7 +339,7 @@ en-US:
   department_small: '%{value} department'
   do_not_call: Do not call
   extra_info: Extra Information
-  extra_info_small: extra contact
+  extra_info_small: extra info
   facebook: Facebook
   linked_in: LinkedIn
   myself: Myself
@@ -358,7 +358,7 @@ en-US:
   #----------------------------------------------------------------------------
   convert: Convert
   convert_lead: Convert Lead
-  convert_lead_permissions_intro: Contact permissions will be copied from the lead being converted. You can change contact permissions later.
+  convert_lead_permissions_intro: Client permissions will be copied from the lead being converted. You can change contact permissions later.
   convert_lead_text: By converting the lead %{value} will become a contact associated with the existing or newly created account. Lead status will be automatically set to converted.
   create_lead: Create Lead
   create_opp_for_contact: You can optionally create an opportunity for the %{value} contact by specifying the name, current stage, estimated closing date, sale probability, amount of the deal, and the discount offered.
@@ -389,7 +389,7 @@ en-US:
   closed_ago_on: closed %{time_ago} ago on %{date}
   closes_today: expected to close today!
   closing_date: closing date is %{value}
-  create_opportunity: Create Opportunity
+  create_opportunity: Create Policy
   currency: ($)
   days_late: Late by
   days_left: Days left
@@ -399,18 +399,18 @@ en-US:
   from: from
   no_closing_date: no expected closing date
   no_discount: with no discount
-  opportunities: Opportunities
-  opportunities_options: Opportunities Options
-  opportunities_small: opportunities
-  opportunity: Opportunity
-  opportunity_small: opportunity
-  opportunity_summary: Opportunity At a Glance
+  opportunities: Policies
+  opportunities_options: Policies Options
+  opportunities_small: policies
+  opportunity: Policy
+  opportunity_small: policy
+  opportunity_summary: Policy At a Glance
   opportunity_summary_text: "%{amount} with %{discount} discount and %{probability} probability" 
   past_due: past due, was expected to close %{value} ago
   probability: Probability
   probability_number: and %{value} probability
-  save_opportunity: Save Opportunity
-  stage: Stage
+  save_opportunity: Save Policy
+  stage: Type
   total_opportunities: Total Opportunities
   weighted_amount: Weighted amount
 
@@ -472,9 +472,9 @@ en-US:
   recent_activity_options: Recent Activity Options
   subject_account: account
   subject_campaign: campaign
-  subject_contact: contact
+  subject_contact: client
   subject_lead: lead
-  subject_opportunity: opportunity
+  subject_opportunity: policy
   subject_task: task
 
   # Views -> Common.
@@ -509,10 +509,10 @@ en-US:
   permissions: Permissions
   please_retry: please try another query.
   recent_items: Recent Items
-  select_contact: Select Contact
+  select_contact: Select Client
   select_lead: Select Lead
   select_task: Select Task
-  select_opportunity: Select Opportunity
+  select_opportunity: Select Policy
   search_assets: Search %{value}
   time_ago: "%{value} ago"
   background_info: Background
@@ -526,7 +526,7 @@ en-US:
 
   # Views -> Layout.
   #----------------------------------------------------------------------------
-  about: About
+  about: Support
   about_dev_group: Discussion group for developers
   about_features: Features and bugs
   about_ffc: About Fat Free CRM
@@ -557,8 +557,8 @@ en-US:
 
   # Views -> Admin
   #----------------------------------------------------------------------------
-  back_to_crm: Back to Fat Free CRM
-  crm_admin_page: Fat Free CRM Administration
+  back_to_crm: Back to Policy Office
+  crm_admin_page: Policy Office Administration
 
   # Views -> Admin -> Users.
   #----------------------------------------------------------------------------
@@ -595,11 +595,11 @@ en-US:
   #----------------------------------------------------------------------------
   pluralize:
     contact: 
-      one: '1 contact'
-      other: '%{count} contacts'
+      one: '1 client'
+      other: '%{count} clients'
     opportunity:
-      one: '1 opportunity'
-      other: '%{count} opportunities'
+      one: '1 policy'
+      other: '%{count} policies'
     lead:
       one: '1 lead'
       other: '%{count} leads'
