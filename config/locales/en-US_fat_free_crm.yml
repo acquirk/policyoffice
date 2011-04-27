@@ -133,9 +133,9 @@ en-US:
         opportunity:
           attributes:
             name:
-              missing_opportunity_name: "^Please specify opportunity name."
+              missing_opportunity_name: "^Please specify policy name."
             access:
-              share_opportunity: "^Please specify users to share the opportunity with."
+              share_opportunity: "^Please specify users to share the policy with."
         task:
           attributes:
             name:
@@ -168,7 +168,7 @@ en-US:
   msg_cant_do: "Can't %{action} the %{asset} since it's no longer available."
   msg_email_not_found: No user was found with that email address.
   msg_enter_new_password: Please enter your new password.
-  msg_goodbye: You have been logged out. Thank you for using Fat Free CRM!
+  msg_goodbye: You have been logged out. Thank you for using Policy Office!
   msg_invalid_password: "^Please specify valid current password"
   msg_invalig_login: Invalid username or password.
   msg_last_login: Your last login was on %{value}.
@@ -179,8 +179,8 @@ en-US:
   msg_password_updated: Password was successfully updated.
   msg_pwd_instructions_sent: Instructions to reset your password have been sent to you. Please check your email.
   msg_require_admin: You must be Administrator to access this page.
-  msg_successful_signup: Successful signup, welcome to Fat Free CRM!
-  msg_welcome: Welcome to Fat Free CRM!
+  msg_successful_signup: Successful signup, welcome to Policy Office!
+  msg_welcome: Welcome to Policy Office!
 
   # Options.
   #----------------------------------------------------------------------------
@@ -330,11 +330,11 @@ en-US:
   alt_email_small: Other
   blog: Website/Blog
   contact: Contact
-  contact_small: contact
-  contacts: Contacts
-  contacts_options: Contacts Options
-  contacts_small: contacts
-  create_contact: Create Contact
+  contact_small: client
+  contacts: Clients
+  contacts_options: Clients Options
+  contacts_small: clients
+  create_contact: Add Client
   department: Department
   department_small: '%{value} department'
   do_not_call: Do not call
@@ -348,7 +348,7 @@ en-US:
   permissions_intro_shared: By default only the selected users will have access to the %{value}. You can change permissions later.
   referred_by: Referred by
   referred_by_small: referred by
-  save_contact: Save Contact
+  save_contact: Save Client
   twitter: Twitter
   web_presence: Web Presence
   web_presence_small: web presence
