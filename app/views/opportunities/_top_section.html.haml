@@ -16,7 +16,7 @@
         = f.text_field :closes_on, :value => f.object.closes_on ? l(f.object.closes_on, :format => :mmddyyyy) : "", :style => "width:110px;", :autocomplete => :off
       %td(valign="top")
         .label #{t :probability} (%):
-        = 100 :probability, :style => "width:110px; text-align:right;"
+        = f.text_field :probability, :style => "width:110px; text-align:right;"
       %td(valign="top")
         .label #{t :amount} #{t :currency}:
         = f.text_field :amount, :style => "width:110px; text-align:right;"
