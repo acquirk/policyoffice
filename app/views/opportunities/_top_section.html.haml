@@ -18,10 +18,6 @@
       %td(valign="top")
         .label #{t :amount} #{t :currency}:
         = f.text_field :amount, :style => "width:110px; text-align:right;"
-      /%td= spacer
-      /%td(valign="top")
-        /.label #{t :discount} #{t :currency}:
-        /= f.text_field :discount, :style => "width:110px; text-align:right;"
 
   - fields_for(@account) do |a|
     = a.hidden_field :user_id
