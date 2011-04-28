@@ -11,14 +11,14 @@
 = render :partial => "comments/new", :locals => { :commentable => @contact }
 = render :partial => "common/timeline", :collection => @timeline
 
-= section(@contact, :tasks)
-.log#tasks
-  = render :partial => "common/tasks"
-
 = section(@contact, :opportunities)
 .list#opportunities
   = render :partial => "opportunities/opportunity", :collection => @contact.opportunities
 
-= load_select_popups_for(@contact, :tasks, :opportunities)
+= section(@contact, :tasks)
+.log#tasks
+  = render :partial => "common/tasks"
+
+= load_select_popups_for(@contact, :opportunities, :tasks)
 
 = hook(:show_contact_bottom, self)
