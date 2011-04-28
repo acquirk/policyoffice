@@ -20,7 +20,6 @@
         = collection_select :task, :assigned_to, @users, :id, :full_name, { :include_blank => t(:myself) }, { :style => "width:160px", :disabled => @task.assigned_to == @current_user.id }
       %td= spacer
       %td(valign="top")
-        .label.req #{t :contact}:
         = render :partial => "contacts/contact", :collection => @account.contacts
 
     - if Setting.background_info && Setting.background_info.include?(:task)
