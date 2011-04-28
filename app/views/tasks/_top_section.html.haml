@@ -21,9 +21,7 @@
       %td= spacer
       %td(valign="top")
         .label.req #{t :contact}:
-        = section(@account, :contacts)
-          .list#contacts
-          = render :partial => "contacts/contact", :collection => @account.contacts
+        = collection_select :contact, { .list#contacts }
 
     - if Setting.background_info && Setting.background_info.include?(:task)
       %tr
