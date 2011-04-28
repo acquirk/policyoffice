@@ -20,8 +20,10 @@
         = collection_select :task, :assigned_to, @users, :id, :full_name, { :include_blank => t(:myself) }, { :style => "width:160px", :disabled => @task.assigned_to == @current_user.id }
       %td= spacer
       %td(valign="top")
-        .label.req #{t :category}:
-        = f.select :category, @category, { :selected => @task.category.blank? ? nil : @task.category.to_sym, :include_blank => t(:select_blank) }, { :style => "width:160px" }
+        .label.req #{t :contact}:
+        = section(@account, :contacts)
+          .list#contacts
+          = render :partial => "contacts/contact", :collection => @account.contacts
 
     - if Setting.background_info && Setting.background_info.include?(:task)
       %tr
