@@ -179,7 +179,7 @@ lead_source:
 # Opportunity Stage.
 #------------------------------------------------------------------------------
 opportunity_stage:
-  - :whole_life
+  - :prospecting
   - :analysis
   - :presentation
   - :proposal
@@ -189,7 +189,7 @@ opportunity_stage:
   - :lost
 
 opportunity_stage_color:
-  :whole_life  : lavender
+  :prospecting  : lavender
   :analysis     : mistyrose
   :presentation : wheat
   :proposal     : thistle
