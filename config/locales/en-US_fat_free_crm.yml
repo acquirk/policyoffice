@@ -193,7 +193,7 @@ en-US:
   option_amount: amount
   option_before: before
   option_brief: brief
-  option_closes_on: close date
+  option_closes_on: renewal date
   option_company: company
   option_created_at: date created
   option_ends_on: end date
@@ -385,19 +385,19 @@ en-US:
   # Views -> Opportunities.
   #----------------------------------------------------------------------------
   amount: Amount
-  close_date: Close date
-  closed_ago_on: closed %{time_ago} ago on %{date}
-  closes_today: expected to close today!
-  closing_date: closing date is %{value}
+  close_date: Renewal date
+  closed_ago_on: renewed %{time_ago} ago on %{date}
+  closes_today: expected to renew today!
+  closing_date: renewal date is %{value}
   create_opportunity: Create Policy
   currency: ($)
   days_late: Late by
   days_left: Days left
   discount: Discount
   discount_number: with %{value} discount
-  expected_to_close: expected to close in %{time} on %{date}
+  expected_to_close: expected to renew in %{time} on %{date}
   from: from
-  no_closing_date: no expected closing date
+  no_closing_date: no expected renewal date
   no_discount: with no discount
   opportunities: Policies
   opportunities_options: Policies Options
@@ -411,7 +411,7 @@ en-US:
   probability_number: and %{value} probability
   save_opportunity: Save Policy
   stage: Type
-  total_opportunities: Total Opportunities
+  total_opportunities: Total Policies
   weighted_amount: Weighted amount
 
   # Views -> Tasks.
