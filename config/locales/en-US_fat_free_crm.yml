@@ -47,14 +47,14 @@ en-US:
   word_of_mouth: Word of Mouth
   other: Other
 
-  prospecting: Prospecting
-  analysis: Analysis
-  presentation: Presentation
-  proposal: Proposal
-  negotiation: Negotiation
-  final_review: Final Review
-  won: Closed/Won
-  lost: Closed/Lost
+  prospecting: Whole Life
+  analysis: Term Life
+  presentation: Universal Life
+  proposal: Medicare Supplemental
+  negotiation: Medicare Advantage
+  final_review: Indemnity
+  won: LTC
+  lost: Annuity
 
   call: Call
   email: Email
