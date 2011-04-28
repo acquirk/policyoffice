@@ -15,11 +15,6 @@
         = h(contact.title) << ", " << h(contact.department)
       - else
         = h(contact.title) if contact.title?
-      - if contact.account && contact.account.name? && contact.account.name != contact.full_name
-        == #{t :at} #{link_to h(contact.account.name), account_path(contact.account)}
-      - if contact.lead and contact.lead.referred_by?
-        &ndash;
-        = #{t :referred_by_small} #{contact.lead.referred_by}"
     - unless @current_user.preference[:contacts_outline] == "brief"
       %dt{ :style => "padding: 2px 0px 0px 0px" }
         = link_to_email(contact.email) << " | " if contact.email.present?

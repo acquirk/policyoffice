@@ -335,8 +335,8 @@ en-US:
   contacts_options: Clients Options
   contacts_small: clients
   create_contact: Add Client
-  department: Department
-  department_small: '%{value} department'
+  department: Job/Industry
+  department_small: '%{value} job'
   do_not_call: Do not call
   extra_info: Extra Information
   extra_info_small: extra info
