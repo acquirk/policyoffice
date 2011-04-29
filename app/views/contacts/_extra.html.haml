@@ -16,8 +16,8 @@
           = f.text_field :department, :style => "width:240px"
       %tr
         %td{ :valign => :top }
-          .label #{t :born_on}:
-          = f.text_field :born_on, :style => "width:240px"
+          .label #{t Date of Birth}:
+          = f.date :born_on, :style => "width:240px"
         %td= spacer
         %td{ :valign => :top }
           .label #{t :mobile}:
