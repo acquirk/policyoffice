@@ -6,8 +6,6 @@
     = render :partial => "leads/top_section", :locals => { :f => f, :edit => true }
     = render :partial => "leads/status",      :locals => { :f => f, :edit => true }
     = render :partial => "leads/contact",     :locals => { :f => f, :edit => true }
-    = render :partial => "leads/web",         :locals => { :f => f, :edit => true }
-    = render :partial => "leads/permissions", :locals => { :f => f, :edit => true }
     .buttonbar
       - if Setting.compound_address
         = f.submit t(:save_lead), :onclick => "crm.clear_all_hints()"
