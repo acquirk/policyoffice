@@ -23,14 +23,4 @@
             = hidden_field_tag "lead[source]", "campaign"
           - else
             = f.select :source, Setting.unroll(:lead_source), { :selected => (@lead.source || "other").to_sym }, { :style => "width:160px" }
-      %tr
-        %td{ :valign => :top }
-          .label #{t :rating}:
-          = rating_select "lead[rating]", { :id => :lead_rating, :selected => @lead.rating, :style => "width:100%" }
-        %td= spacer
-        %td{ :valign => :top, :colspan => 3 }
-          .label #{t :campaign}:
-          - if @campaign && !edit # Create a lead from Campaign landing page: select current campaign and disable the dropdown.
-            = collection_select :lead, :campaign_id, @campaigns, :id, :name, { :selected => @campaign.id }, { :style => "width:100%", :disabled => true }
-          - else
-            = collection_select :lead, :campaign_id, @campaigns, :id, :name, { :selected => @lead.campaign_id, :include_blank => t(:select_none) }, { :style => "width:100%", :onchange => "crm.flip_campaign_permissions(this.value)" }
+     
