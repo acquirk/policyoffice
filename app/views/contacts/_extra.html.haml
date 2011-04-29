@@ -16,8 +16,8 @@
           = f.text_field :department, :style => "width:240px"
       %tr
         %td{ :valign => :top }
-          .label #{t :born_on}:
-          = f.text_field :born_on, :value => f.object.born_on ? l(f.object.born_on, :format => :mmddyyyy) : "", :style => "width:110px;", :autocomplete => :off
+          .label "Birthdate"
+          = f.text_field :born_on, :format => :mmddyyyy) : "", :style => "width:110px;"
       %td(valign="top")
         %td= spacer
         %td{ :valign => :top }
