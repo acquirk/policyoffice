@@ -1,2 +1,2 @@
 rails --version '2.3.8'
-crm_filters_management --version '0.1' --source https://github.com/tractis/crm_filters_management.git
+crm_filters_management --version '0.1' --source github.com/tractis/crm_filters_management.git
