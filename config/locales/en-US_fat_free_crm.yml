@@ -18,8 +18,8 @@ en-US:
   tab_dashboard: Dashboard
   tab_tasks: Tasks
   tab_campaigns: Campaigns
-  tab_leads: Leads
-  tab_accounts: Providers
+  tab_leads: Prospects
+  tab_accounts: Companies
   tab_contacts: Clients
   tab_opportunities: Policies
 
@@ -103,9 +103,9 @@ en-US:
         account:
           attributes:
             name:
-              missing_account_name: "^Please specify provider name."
+              missing_account_name: "^Please specify company name."
             access:
-              share_account: "^Please specify users to share the provider with."
+              share_account: "^Please specify users to share the company with."
         campaign:
           attributes:
             name:
@@ -121,7 +121,7 @@ en-US:
             last_name:
               missing_last_name: "^Please specify last name."
             access:
-              share_contact: "^Please specify users to share the contact with."
+              share_contact: "^Please specify users to share the client with."
         lead:
           attributes:
             first_name:
@@ -129,7 +129,7 @@ en-US:
             last_name:
               missing_last_name: "^Please specify last name."
             access:
-              share_lead: "^Please specify users to share the lead with."
+              share_lead: "^Please specify users to share the prospect with."
         opportunity:
           attributes:
             name:
@@ -260,14 +260,14 @@ en-US:
 
   # Views -> Accounts.
   #----------------------------------------------------------------------------
-  account: Provider
-  account_small: provider
-  accounts: Providers
-  accounts_options: Providers Options
-  accounts_small: providers
+  account: Company
+  account_small: company
+  accounts: Companies
+  accounts_options: Companies Options
+  accounts_small: companies
   assigned_to: Assigned to
   billing_address: Billing address
-  create_account: Create Provider
+  create_account: Create Company
   date_created: Date Created
   date_updated: Date Updated
   fax: Fax
@@ -280,7 +280,7 @@ en-US:
   keep_private: Keep it private, do not share with others
   make_public: Share it with everyone
   same_as_billing: same as billing
-  save_account: Save Provider
+  save_account: Save Company
   share_with: Share it with the following people
   shipping_address: Shipping address
   website: Website
@@ -357,30 +357,30 @@ en-US:
   # Views -> Leads.
   #----------------------------------------------------------------------------
   convert: Convert
-  convert_lead: Convert Lead
-  convert_lead_permissions_intro: Client permissions will be copied from the lead being converted. You can change contact permissions later.
-  convert_lead_text: By converting the lead %{value} will become a contact associated with the existing or newly created account. Lead status will be automatically set to converted.
-  create_lead: Create Lead
-  create_opp_for_contact: You can optionally create an opportunity for the %{value} contact by specifying the name, current stage, estimated closing date, sale probability, amount of the deal, and the discount offered.
-  lead: Lead
-  lead_info_small: lead contact
-  lead_permissions_intro_private: By default permissions will be copied from the campaign or set to private. You can change lead permissions later.
-  lead_permissions_intro_public: By default permissions will be copied from the campaign or set to public. You can change lead permissions later.  
-  lead_permissions_intro_shared: By default permissions will be copied from the campaign or shared with the specified users. You can change lead permissions later.  
-  lead_small: lead
-  lead_status_small: lead status
-  lead_summary: Lead Summary
-  leads: Leads
-  leads_options: Leads Options
-  leads_small: leads
+  convert_lead: Convert Prospect
+  convert_lead_permissions_intro: Contact permissions will be copied from the prospect being converted. You can change contact permissions later.
+  convert_lead_text: By converting the prospect %{value} will become a client associated with the existing or newly created account. Prospect status will be automatically set to converted.
+  create_lead: Create Prospect
+  create_opp_for_contact: You can optionally create a policy for the %{value} client.
+  lead: Prospect
+  lead_info_small: prospect contact
+  lead_permissions_intro_private: By default permissions will be copied from the campaign or set to private. You can change prospect permissions later.
+  lead_permissions_intro_public: By default permissions will be copied from the campaign or set to public. You can change prospect permissions later.  
+  lead_permissions_intro_shared: By default permissions will be copied from the campaign or shared with the specified users. You can change prospect permissions later.  
+  lead_small: prospect
+  lead_status_small: prospect status
+  lead_summary: Prospect Summary
+  leads: Prospects
+  leads_options: Prospects Options
+  leads_small: prospects
   none: None
   rating: Rating
   reject: Reject
-  reject_lead_confirm: Are you sure you want to reject this lead?
-  save_lead: Save Lead
+  reject_lead_confirm: Are you sure you want to reject this prospect?
+  save_lead: Save Prospect
   source: Source
   status: Status
-  total_leads: Total Leads
+  total_leads: Total Prospects
 
   # Views -> Opportunities.
   #----------------------------------------------------------------------------
@@ -470,10 +470,10 @@ en-US:
   no_activity_records: No activity records found.
   recent_activity: Recent Activity
   recent_activity_options: Recent Activity Options
-  subject_account: account
+  subject_account: company
   subject_campaign: campaign
   subject_contact: client
-  subject_lead: lead
+  subject_lead: prospect
   subject_opportunity: policy
   subject_task: task
 
@@ -510,7 +510,7 @@ en-US:
   please_retry: please try another query.
   recent_items: Recent Items
   select_contact: Select Client
-  select_lead: Select Lead
+  select_lead: Select Prospect
   select_task: Select Task
   select_opportunity: Select Policy
   search_assets: Search %{value}
@@ -601,8 +601,8 @@ en-US:
       one: '1 policy'
       other: '%{count} policies'
     lead:
-      one: '1 lead'
-      other: '%{count} leads'
+      one: '1 prospect'
+      other: '%{count} prospects'
     day:
       one: '1 day'
       other: '%{count} days'
