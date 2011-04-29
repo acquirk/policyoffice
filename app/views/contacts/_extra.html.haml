@@ -17,7 +17,8 @@
       %tr
         %td{ :valign => :top }
           .label #{t :born_on}:
-          = f.date :born_on, :style => "width:240px"
+          = f.text_field :born_on, :value => f.object.born_on ? l(f.object.born_on, :format => :mmddyyyy) : "", :style => "width:110px;", :autocomplete => :off
+      %td(valign="top")
         %td= spacer
         %td{ :valign => :top }
           .label #{t :mobile}:
