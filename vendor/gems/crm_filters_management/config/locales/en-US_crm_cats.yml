@@ -1,0 +1,7 @@
+en-US:
+  language: English
+
+  # crm_filters_management plugin internalization.
+  #----------------------------------------------------------------------------
+  filters: Filters
+  msg_cant_delete_user_filter: Couldn't delete the filter
