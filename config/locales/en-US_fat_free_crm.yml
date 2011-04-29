@@ -329,6 +329,7 @@ en-US:
   #----------------------------------------------------------------------------
   alt_email_small: Other
   blog: Website/Blog
+  born_on: Birthdate MM/DD/YYYY
   contact: Client
   contact_small: client
   contacts: Clients
