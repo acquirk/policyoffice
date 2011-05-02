@@ -74,7 +74,7 @@
 #     - :opportunity
 #     - :task
 #
-:background_info: [:contact]
+:background_info: []
 
 # Address format.
 #------------------------------------------------------------------------------
