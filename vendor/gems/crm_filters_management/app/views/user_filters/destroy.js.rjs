@@ -1,3 +1,0 @@
-id = dom_id(@user_filter)
-
-page[id].visual_effect :blind_up, :duration => 0.25
