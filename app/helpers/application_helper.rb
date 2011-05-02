@@ -52,11 +52,7 @@ module ApplicationHelper
         :before => "crm.flip_subtitle(this)"
       ), :class => "subtitle")
   end
-  #---------------------------------------------------------------------------- 
-  def linkto_edit(model)
-    name = model.class.name.downcase 
-    name=='customfield' ? admin_link="admin" : adminlink="" link_to_remote("Edit", :method => :get, :url => send("edit#{adminlink}#{name}_path", model), :with => "{ previous: crm.find_form('edit#{admin_link}#{name}') }" ) 
-  end
+
   #----------------------------------------------------------------------------
   def section(related, assets)
     asset = assets.to_s.singularize
