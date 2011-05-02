@@ -1,10 +1,5 @@
 - assets = controller.controller_name
 - asset = assets.singularize
-  - if controller.controller_name == 'customfields'
-  	adminlink = "admin"
-  - else
-    admin_link = "" 
-
 #empty
   - if @current_query.blank?
     == #{t(:could_not_find, assets)} #{link_to_remote(t(:create_new) << ' ' << t(asset + '_small'), :url => send("new_" << asset << "_path"))}.
