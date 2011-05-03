@@ -5,7 +5,6 @@
     = f.error_messages
     = render :partial => "accounts/top_section",  :locals => { :f => f, :edit => true }
     = render :partial => "accounts/contact_info", :locals => { :f => f, :edit => true }
-    = render :partial => "accounts/customfields", :locals => { :f => f, :edit => true }
     .buttonbar
       - if Setting.compound_address
         = f.submit t(:save_account), :onclick => "crm.clear_all_hints()"

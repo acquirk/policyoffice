@@ -99,12 +99,11 @@ module ApplicationHelper
 
   #----------------------------------------------------------------------------
   def link_to_edit(model)
-    name = model.class.name.downcase
-    name=='customfield' ? admin_link="admin_" : admin_link=""
-    link_to_remote("Edit",
+    name = model.class.name.underscore.downcase
+    link_to_remote(t(:edit),
       :method => :get,
-      :url    => send("edit_#{admin_link}#{name}_path", model),
-      :with   => "{ previous: crm.find_form('edit_#{admin_link}#{name}') }"
+      :url    => send("edit_#{name}_path", model),
+      :with   => "{ previous: crm.find_form('edit_#{name}') }"
     )
   end
 
