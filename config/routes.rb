@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :passwords
   map.resources :comments
   map.resources :emails
+  map.heroku_sass_and_cache
 
   map.resources :tasks,
     :collection => {
