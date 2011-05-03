@@ -1,9 +1,9 @@
-- collapsed = session[:contact_customfields].nil? # && @contact.errors.empty?
-= subtitle :contact_customfields, collapsed, "Custom fields"
+- collapsed = session[:account_customfields].nil? # && @account.errors.empty?
+= subtitle :account_customfields, collapsed, "Custom fields"
 .section
-  %small#contact_customfields_intro{ hidden_if(!collapsed) }
+  %small#account_customfields_intro{ hidden_if(!collapsed) }
     You can add custom information below, check with your administator if you need to add new fields here.
-  #contact_customfields{ hidden_if(collapsed) }
+  #account_customfields{ hidden_if(collapsed) }
     %table{ :width => 500, :cellpadding => 0, :cellspacing => 0 }
       - @customfields.each_with_index do |cf,i| 
         - if i.even?
