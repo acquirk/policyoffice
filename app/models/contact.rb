@@ -65,7 +65,7 @@ class Contact < ActiveRecord::Base
   named_scope :created_by, lambda { |user| { :conditions => [ "user_id = ?", user.id ] } }
   named_scope :assigned_to, lambda { |user| { :conditions => ["assigned_to = ?", user.id ] } }
 
-  simple_column_search :first_name, :last_name, :phone, :full_address, :email,
+  simple_column_search :first_name, :last_name, :phone, :addresses, :email,
     :match => lambda { |column| column == :email ? :middle : :start },
     :escape => lambda { |query| query.gsub(/[^\w\s\-\.']/, "").strip }
   uses_user_permissions
