@@ -19,8 +19,8 @@ class Notifier < ActionMailer::Base
   
   #----------------------------------------------------------------------------
   def password_reset_instructions(user)
-    subject       "Fat Free CRM: " + I18n.t(:password_reset_instructions)
-    from          "Fat Free CRM <noreply@fatfreecrm.com>"
+    subject       "Policy Office: " + I18n.t(:password_reset_instructions)
+    from          "Policy Office <noreply@policyoffice.com>"
     recipients    user.email
     sent_on       Time.now
     body          :edit_password_url => edit_password_url(user.perishable_token)
