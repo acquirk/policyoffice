@@ -8,9 +8,6 @@
       %td(valign="top")
         .label.req.top #{t :stage}:
         = f.select :stage, @stage, { :selected => @opportunity.stage ? @opportunity.stage.to_sym : nil }, { :style => "width:160px" }
-      %td(valign="top")
-        .label.req.top #{t :policystatus}:
-        = f.select :policystatus, { :selected => @opportunity.policystatus ? @opportunity.policystatus.to_sym : nil }, { :style => "width:160px" }
 
   %table{ :border => 0, :width => 500, :cellpadding => 0, :cellspacing => 0 }
     %tr

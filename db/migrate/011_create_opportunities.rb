@@ -9,7 +9,6 @@ class CreateOpportunities < ActiveRecord::Migration
       t.string      :access,   :limit => 8, :default => "Private" # %w(Private Public Shared)
       t.string      :source,   :limit => 32
       t.string      :stage,    :limit => 32
-      t.string      :policystatus
       t.integer     :probability
       t.decimal     :amount,   :precision => 12, :scale => 2
       t.decimal     :discount, :precision => 12, :scale => 2

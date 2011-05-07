@@ -60,7 +60,7 @@ class OpportunitiesController < ApplicationController
   # GET /opportunities/new.xml                                             AJAX
   #----------------------------------------------------------------------------
   def new
-    @opportunity = Opportunity.new(:user => @current_user, :stage => "prospecting", :policystatus => "pending", :access => Setting.default_access)
+    @opportunity = Opportunity.new(:user => @current_user, :stage => "prospecting", :access => Setting.default_access)
     @users       = User.except(@current_user).all
     @account     = Account.new(:user => @current_user)
     @accounts    = Account.my(@current_user).all(:order => "name")
@@ -299,7 +299,6 @@ class OpportunitiesController < ApplicationController
   #----------------------------------------------------------------------------
   def load_settings
     @stage = Setting.unroll(:opportunity_stage)
-    @policystatus = Setting.unroll(:opportunity_policystatus)
   end
 
 end

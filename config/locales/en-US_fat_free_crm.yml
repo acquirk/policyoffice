@@ -416,7 +416,6 @@ en-US:
   probability_number: and %{value} probability
   save_opportunity: Save Policy
   stage: Type
-  policystatus: Policy Status
   total_opportunities: Total Policies
   weighted_amount: Weighted amount
 

@@ -28,7 +28,6 @@
 #  access          :string(8)       default("Private")
 #  source          :string(32)
 #  stage           :string(32)
-#  policystatus    :string(32)
 #  probability     :integer(4)
 #  amount          :decimal(12, 2)
 #  discount        :decimal(12, 2)
@@ -44,7 +43,6 @@ class Opportunity < ActiveRecord::Base
   belongs_to  :assignee, :class_name => "User", :foreign_key => :assigned_to
   has_one     :account_opportunity, :dependent => :destroy
   has_one     :account, :through => :account_opportunity
-  has_one     :policystatus
   has_many    :contact_opportunities, :dependent => :destroy
   has_many    :contacts, :through => :contact_opportunities, :uniq => true, :order => "contacts.id DESC"
   has_many    :tasks, :as => :asset, :dependent => :destroy, :order => 'created_at DESC'
@@ -78,8 +76,6 @@ class Opportunity < ActiveRecord::Base
   def weighted_amount
     (amount || 0) 
   end
-
-
 
   # Backend handler for [Create New Opportunity] form (see opportunity/create).
   #----------------------------------------------------------------------------
