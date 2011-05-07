@@ -28,6 +28,7 @@
 #  access          :string(8)       default("Private")
 #  source          :string(32)
 #  stage           :string(32)
+#  policystatus    :string(32)
 #  probability     :integer(4)
 #  amount          :decimal(12, 2)
 #  discount        :decimal(12, 2)

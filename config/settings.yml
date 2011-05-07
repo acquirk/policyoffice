@@ -199,6 +199,16 @@ opportunity_stage_color:
   :won          : lightgreen
   :lost         : pink
 
+opportunity_policystatus:
+  - :pending
+  - :inforce
+  - :lapsed
+
+opportunity_policystatus_color:
+  :pending      : lavender
+  :inforce      : lightgreen
+  :lapsed       : pink
+
 # Task Category, Due Date, and Completed Date.
 #------------------------------------------------------------------------------
 task_category:

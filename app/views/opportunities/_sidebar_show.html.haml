@@ -4,6 +4,9 @@
     %dt= @opportunity.stage ? t(@opportunity.stage) : t(:other)
     %tt #{t :stage}:
   %li
+    %dt= @opportunity.policystatus ? t(@opportunity.policystatus) : t(:other)
+    %tt #{t :policystatus}:
+  %li
     %dt= @opportunity.closes_on ? @opportunity.closes_on.strftime("%b %e") : t(:n_a)
     %tt #{t :close_date}:
   - if @opportunity.closes_on && @opportunity.stage !~ /lost|won/
