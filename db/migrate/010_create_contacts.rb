@@ -11,6 +11,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string      :access,      :limit => 8, :default => "Private"
       t.string      :title,       :limit => 64
       t.string      :department,  :limit => 8, :default => "Unknown"
+      t.string      :smoker,      :limit => 8, :default => ""
       t.string      :source,      :limit => 32
       t.string      :email,       :limit => 64
       t.string      :alt_email,   :limit => 64
