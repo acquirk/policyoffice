@@ -56,6 +56,10 @@ en-US:
   won: LTC
   lost: Annuity
 
+  pending: Pending
+  inforce: Inforce
+  lapsed: Lapsed
+
   call: Call
   email: Email
   follow_up: Follow-up
@@ -412,6 +416,7 @@ en-US:
   probability_number: and %{value} probability
   save_opportunity: Save Policy
   stage: Type
+  policystatus: Policy Status
   total_opportunities: Total Policies
   weighted_amount: Weighted amount
 
