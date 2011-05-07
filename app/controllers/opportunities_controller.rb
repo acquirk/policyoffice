@@ -299,6 +299,7 @@ class OpportunitiesController < ApplicationController
   #----------------------------------------------------------------------------
   def load_settings
     @stage = Setting.unroll(:opportunity_stage)
+    @policystatus = Setting.unroll(:opportunity_policystatus)
   end
 
 end
