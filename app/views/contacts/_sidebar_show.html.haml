@@ -8,8 +8,8 @@
     %div= h(@contact.title)
   - elsif @contact.account
     %div= link_to(h(@contact.account.name), account_path(@contact.account))
-  - unless @contact.department.blank?
-    = t(:department_small, h(@contact.department))
+  - unless @contact.smoker.blank?
+    = t(:smoker_small, h(@contact.smoker))
 
   %div= render :partial => "common/address_show", :locals => { :asset => @contact, :type => 'business', :title => :address }
 

@@ -29,7 +29,6 @@
 #  last_name       :string(64)      default(""), not null
 #  access          :string(8)       default("Private")
 #  title           :string(64)
-#  department      :string(64)
 #  smoker          :string(8)
 #  source          :string(32)
 #  email           :string(64)
