@@ -12,12 +12,12 @@
           = f.text_field :title, :style => "width:240px"
         %td= spacer
         %td{ :valign => :top }
-          .label #{t :department}:
-          = f.text_field :department, :style => "width:100px"
+          .label.top #{t :company}:
+          = f.text_field :company, :style => "width:240px"
       %tr
         %td{ :valign => :top }
-          .label #{t :born_on}:
-          = f.text_field :born_on, :format => :mmddyyyy, :style => "width:110px;"
+          .label #{t :alt_email}:
+          = f.text_field :alt_email, :style => "width:240px"
         %td= spacer
         %td{ :valign => :top }
           .label #{t :mobile}:
@@ -33,6 +33,5 @@
             .check_box
               = f.check_box :do_not_call, {}, true
               #{t :do_not_call}
-
 
 
