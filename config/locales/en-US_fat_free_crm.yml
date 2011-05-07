@@ -56,10 +56,6 @@ en-US:
   won: LTC
   lost: Annuity
 
-  pending: Pending
-  inforce: Inforce
-  lapsed: Lapsed
-
   call: Call
   email: Email
   follow_up: Follow-up
@@ -203,14 +199,14 @@ en-US:
   option_ends_on: end date
   option_first_name: first name
   option_last_name: last name
-  option_leads_count: actual leads
+  option_leads_count: actual prospects
   option_long: long
   option_name: name
   option_probability: probability
   option_rating: rating
   option_revenue: actual revenue
   option_starts_on: start date
-  option_target_leads: target leads
+  option_target_leads: target prospects
   option_target_revenue: target revenue
   option_updated_at: date updated
   show_per_page: Show %{number} %{models} per page using %{format} format. 
@@ -411,7 +407,7 @@ en-US:
   opportunity_small: policy
   opportunity_summary: Policy At a Glance
   opportunity_summary_text: "%{amount} with %{discount} discount and %{probability} probability" 
-  past_due: past due, was expected to close %{value} ago
+  past_due: past due, was expected to renew %{value} ago
   probability: Probability
   probability_number: and %{value} probability
   save_opportunity: Save Policy
