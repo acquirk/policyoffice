@@ -337,7 +337,7 @@ en-US:
   contacts_small: clients
   create_contact: Add Client
   department: Smoker
-  department_small: 'smoker: %{value}'
+  department_small: 'Smoker: %{value}'
   do_not_call: Do not call
   extra_info: Extra Information
   extra_info_small: extra info
