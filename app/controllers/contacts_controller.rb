@@ -26,7 +26,7 @@ class ContactsController < ApplicationController
   # GET /contacts.xml                                             AJAX and HTML
   #----------------------------------------------------------------------------
   def index
-    @clients = get_contacts(:page => params[:page])
+    @contacts = get_contacts(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.haml
