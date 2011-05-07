@@ -12,7 +12,7 @@
 #  last_name       :string(64)      default(""), not null
 #  access          :string(8)       default("Private")
 #  title           :string(64)
-#  smoker          :string(8)
+#  department          :string(8)
 #  source          :string(32)
 #  email           :string(64)
 #  alt_email       :string(64)

@@ -160,7 +160,7 @@ Factory.define :contact do |c|
   c.last_name           { Faker::Name.last_name }
   c.access              "Public"
   c.title               { Factory.next(:title) }
-  c.smoker              { Faker::Name.name + " Smoker" }
+  c.department              { Faker::Name.name + " department" }
   c.source              { %w(campaign cold_call conference online referral self web word_of_mouth other).rand }
   c.email               { Faker::Internet.email }
   c.alt_email           { Faker::Internet.email }

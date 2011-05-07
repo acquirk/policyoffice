@@ -11,7 +11,7 @@
   .indentslim
     = link_to(h(contact.full_name(@current_user.preference[:contacts_naming])), contact)
     %tt
-      - if contact.title? && contact.smoker?
+      - if contact.title? && contact.department?
         = h(contact.title)
       - else
         = h(contact.title) if contact.title?

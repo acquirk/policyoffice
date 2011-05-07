@@ -336,8 +336,8 @@ en-US:
   contacts_options: Clients Options
   contacts_small: clients
   create_contact: Add Client
-  smoker: Smoker
-  smoker_small: 'Smoker: %{value}'
+  department: department
+  department_small: 'department: %{value}'
   do_not_call: Do not call
   extra_info: Extra Information
   extra_info_small: extra info

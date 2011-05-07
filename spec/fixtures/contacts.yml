@@ -12,7 +12,7 @@
 #  last_name       :string(64)      default(""), not null
 #  access          :string(8)       default("Private")
 #  title           :string(64)
-#  smoker          :string(8)
+#  department          :string(8)
 #  source          :string(32)
 #  email           :string(64)
 #  alt_email       :string(64)
@@ -48,7 +48,7 @@ contact_<%= i %>:
   last_name   : <%= last_name = Faker::Name.last_name %>
   access      : Public
   title       : <%= title.rand %>
-  smoker      :
+  department      :
   source      : <%= source.rand %>
   email       : <%= Faker::Internet.free_email.sub(/^.+?@/, "#{first_name}#{last_name.first}@".downcase) %>
   alt_email   : <%= Faker::Internet.free_email.sub(/^.+?@/, "#{first_name}#{rand(9999)}@".downcase) %>
