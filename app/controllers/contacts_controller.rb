@@ -271,4 +271,10 @@ class ContactsController < ApplicationController
     end
   end
 
+  #----------------------------------------------------------------------------
+  def index
+    @search = Contact.search(params[:search])
+    @contacts = @search.all   # or @search.relation to lazy load in view
+  end
+
 end

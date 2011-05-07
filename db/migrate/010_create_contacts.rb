@@ -10,7 +10,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string      :last_name,   :limit => 64, :null => false, :default => ""
       t.string      :access,      :limit => 8, :default => "Private"
       t.string      :title,       :limit => 64
-      t.string      :department,  :limit => 64
+      t.string      :department,  :limit => 8, :default => "Unknown"
       t.string      :source,      :limit => 32
       t.string      :email,       :limit => 64
       t.string      :alt_email,   :limit => 64
