@@ -2,14 +2,14 @@
   = link_to_inline(:options, url_for(:action => :options), :text => t(:options))
 
 .title
+  %span#title Search
+  = render :partial => "home/search"
+  = hook(:contacts, self)
+
+.title
   %span#title #{t :recent_activity}
   = image_tag("loading.gif", :size => "16x16", :id => "loading", :style => "display: none;")
 .remote#options{ hidden }
-
-.title
-  %span#title Search
-  = render :partial => "common/search", :collection => @contacts
-  = hook(:contacts, self)
 
 .list#activities
   - unless @activities.empty?
