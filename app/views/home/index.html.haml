@@ -6,6 +6,9 @@
   = image_tag("loading.gif", :size => "16x16", :id => "loading", :style => "display: none;")
 .remote#options{ hidden }
 
+.list#search
+  = render :partial => "common/search", :collection => @contacts
+
 .list#activities
   - unless @activities.empty?
     = render :partial => "activity", :collection => @activities
