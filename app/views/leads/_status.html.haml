@@ -9,10 +9,6 @@
     %table{ :border => 0, :width => 500, :cellpadding => 0, :cellspacing => 0 }
       %tr
         %td{ :valign => :top }
-          .label.top #{t :assigned_to}:
-          = collection_select :lead, :assigned_to, @users, :id, :full_name, { :include_blank => t(:myself) }, { :style => "width:160px" }
-        %td= spacer
-        %td{ :valign => :top }
           .label.top #{t :status}:
           = f.select :status, lead_status_codes_for(@lead), { :selected => (@lead.status || "new").to_sym }, { :style => "width:160px" }
         %td= spacer
