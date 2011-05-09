@@ -7,8 +7,8 @@
 .remote#options{ hidden }
 
 .title
-  %span#title "Search"
-  = render :partial => "common/search"
+  %span#title Search
+  = render :partial => "common/search", :collection => @contacts
   = hook(:contacts, self)
 
 .list#activities
