@@ -7,9 +7,8 @@
 .remote#options{ hidden }
 
 .title
-  %span#title #{t :Search}
+  %span#title #{t :search}
   = render :partial => "common/search"
-  = hook(:index_contact_sidebar_bottom, self)
 
 .list#activities
   - unless @activities.empty?
