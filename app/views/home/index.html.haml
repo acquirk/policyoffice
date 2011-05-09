@@ -4,6 +4,7 @@
 .title
   %span#title Search
   = render :partial => "search"
+  = hook(:home_view, self, :search => "contacts")
 
 .title
   %span#title #{t :recent_activity}
