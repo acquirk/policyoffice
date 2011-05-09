@@ -6,8 +6,9 @@
   = image_tag("loading.gif", :size => "16x16", :id => "loading", :style => "display: none;")
 .remote#options{ hidden }
 
-.list#search
+.filters#filters
   = render :partial => "common/search", :collection => @contacts
+  = hook(:index_contact_sidebar_bottom, self)
 
 .list#activities
   - unless @activities.empty?
