@@ -9,6 +9,7 @@
 .title
   %span#title #{t :search}
   = render :partial => "common/search"
+  = hook(:contacts, self)
 
 .list#activities
   - unless @activities.empty?
