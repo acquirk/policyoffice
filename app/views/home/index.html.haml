@@ -8,7 +8,7 @@
 .list#contacts
   = render :partial => "contacts/contact", :collection => @contacts
 
-%div{ :style => "margin: 6px 0px 6px 0px" }
+%div{ :style => "margin: 12px 0px 6px 0px" }
   .title
     %span#title #{t :recent_activity}
     = image_tag("loading.gif", :size => "16x16", :id => "loading", :style => "display: none;")
