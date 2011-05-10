@@ -1,6 +1,20 @@
+.title_tools
+  = link_to_inline(:options, url_for(:action => :options), :text => t(:options))
+
 .title
   %span#title Search
 = render :partial => "search"
 
 .list#contacts
   = render :partial => "contacts/contact", :collection => @contacts
+
+.title
+  %span#title #{t :recent_activity}
+  = image_tag("loading.gif", :size => "16x16", :id => "loading", :style => "display: none;")
+.remote#options{ hidden }
+
+.list#activities
+  - unless @activities.empty?
+    = render :partial => "activity", :collection => @activities
+  - else
+    #{t :no_activity_records}
