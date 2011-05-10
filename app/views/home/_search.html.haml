@@ -1,6 +1,6 @@
 - path = controller.controller_name
 - path = "admin/#{path}" if controller.class.to_s.starts_with?("Admin::")
 
-%div{ :style => "margin: 0px 0px 6px 0px" }
-  = text_field_tag("query", @current_query, :size => 23)
+%div{ :style => "margin: 6px 0px 6px 0px" }
+  = text_field_tag("query", @current_query, :size => 32)
   = observe_field("query", :frequency => 0.75, :function => "crm.search(value, 'contacts')")

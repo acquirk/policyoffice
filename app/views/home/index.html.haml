@@ -5,6 +5,12 @@
   %span#title Search
 = render :partial => "search"
 
+.list#contacts
+  - unless @contacts.empty?
+    = render :partial => "contact", :collection => @contacts
+  - else
+    = render :partial => "common/empty"
+
 .title
   %span#title #{t :recent_activity}
   = image_tag("loading.gif", :size => "16x16", :id => "loading", :style => "display: none;")
